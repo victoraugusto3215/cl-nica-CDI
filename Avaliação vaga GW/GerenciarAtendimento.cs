@@ -13,7 +13,11 @@ namespace Avaliação_vaga_GW
             Console.WriteLine("Digite a opção escolhida:");
             Console.WriteLine("1 - Cadastrar Atendimento");
             Console.WriteLine("2 - Listar Atendimento por Data");
-            int opcao = Convert.ToInt32(Console.ReadLine());
+            if (!int.TryParse(Console.ReadLine(), out int opcao))
+            {
+                Console.WriteLine("Opção inválida!");
+                return;
+            }
             switch(opcao)
             {
                 case 1:
