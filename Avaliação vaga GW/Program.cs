@@ -18,7 +18,7 @@ namespace Avaliação_vaga_GW
             GerenciarProcedimento.ListProcedimentos.Add(Prostata);
             GerenciarProcedimento.ListProcedimentos.Add(Tomografia);
 
-            // Um menu foi projetado com opções que redirecionam para submenus,
+            // Foi projetado um menu com opções, que redirecionam para submenus,
             // proporcionando facilidade, praticidade e possiveis confusões ao usuário.
             int opcao = 0;
             do
