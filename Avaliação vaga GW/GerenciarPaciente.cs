@@ -14,7 +14,11 @@ namespace Avaliação_vaga_GW
             Console.WriteLine("1 - Cadastrar Paciente");
             Console.WriteLine("2 - Listar Paciente");
             Console.WriteLine("3 - Sair");
-            int opcaoPaciente = Convert.ToInt32(Console.ReadLine());
+            if (!int.TryParse(Console.ReadLine(), out int opcao))
+            {
+                Console.WriteLine("Opção inválida!");
+                return;
+            }
 
             switch (opcaoPaciente)
             {
