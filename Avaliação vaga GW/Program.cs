@@ -19,7 +19,7 @@ namespace Avaliação_vaga_GW
             GerenciarProcedimento.ListProcedimentos.Add(Tomografia);
 
             // Foi projetado um menu com opções, que redirecionam para submenus,
-            // proporcionando facilidade, praticidade e possiveis confusões ao usuário.
+            // proporcionando facilidade, praticidade e evitando possiveis confusões ao usuário.
             int opcao = 0;
             do
             {
